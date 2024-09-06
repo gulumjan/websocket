@@ -102,7 +102,7 @@ const ChatWebSocket = () => {
     <div className={scss.ChatWebSocket}>
       <div className="container">
         <div className={scss.content}>
-          <h1>ChatWebSocket</h1>
+          <h1>Let Us Talk !</h1>
           {data ? (
             <div>
               {

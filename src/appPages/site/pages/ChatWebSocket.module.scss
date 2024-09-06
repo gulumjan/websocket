@@ -104,3 +104,49 @@
     }
   }
 }
+
+@media (max-width: 414px) {
+  .ChatWebSocket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .content {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .messageBlock {
+        padding: 8px;
+        gap: 15px;
+        width: 86%;
+
+        .message {
+          padding: 8px;
+          gap: 10px;
+
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .sendMessage {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      width: 429px;
+      input {
+        width: 80%;
+        font-size: 15px;
+      }
+
+      button {
+        width: 90px;
+        font-size: 13px;
+      }
+    }
+  }
+}
