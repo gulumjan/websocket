@@ -1,9 +1,18 @@
 "use client";
-import { signIn } from "next-auth/react";
-import React from "react";
+import { signIn, useSession } from "next-auth/react";
+import React, { useEffect } from "react";
 import scss from "./Auth.module.scss";
+import { useRouter } from "next/navigation";
 
 const SignUpPage = () => {
+  const { data: session } = useSession();
+
+  const router = useRouter();
+  useEffect(() => {
+    if (session) {
+      router.push("/chat");
+    }
+  }, [session, router]);
   return (
     <div className={scss.auth}>
       <div className="container">
